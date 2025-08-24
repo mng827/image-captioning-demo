@@ -55,6 +55,7 @@ function App() {
 
         case 'generating':
           setStatus('Generating...');
+          setResult(null);
           break;
 
         case 'complete':
@@ -93,6 +94,8 @@ function App() {
           </div>
       ))}
 
+      <p>Description: {result}</p>
+
       {imageFile && (
         <div>
           <br />
@@ -100,7 +103,6 @@ function App() {
         </div>
       )}
 
-      <p>Description: {result}</p>
     </div>
   )
 }
